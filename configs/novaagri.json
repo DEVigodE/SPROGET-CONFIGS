@@ -1,0 +1,131 @@
+{
+    "client_name": "novaagri",
+    "client_key": "aa4760c2-d616-40ad-be63-a2c67ff61e41",
+    "info": {
+        "title": "API Documentation: NOVA AGRI",
+        "base_url": "petstore.swagger.io/v2",
+        "description": "petstore.swagger.io/v2",
+        "info_link": {
+            "terms_of_service": "https://smartbear.com/terms-of-use/",
+            "contact": ""
+        }
+    },
+    "requests": [
+        {
+            "name": "FIND BY ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{URL}}/api/v1/person/1",
+                    "host": [
+                        "{{URL}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "person",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "FIND ALL",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{URL}}/api/v1/person",
+                    "host": [
+                        "{{URL}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "person"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "CREATE",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"first_name\": \"Diego\",\r\n    \"last_name\": \"Cristian\",\r\n    \"address\": \"Novo Mundo, Goiania-GO\",\r\n    \"gender\": \"Female\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{URL}}/api/v1/person",
+                    "host": [
+                        "{{URL}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "person"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "UPDATE",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"id\": 10,\r\n    \"firstName\": \"Ellen\",\r\n    \"lastName\": \"Cristian De Oliveira\",\r\n    \"address\": \"Novo Mundo, Goiania-GO\",\r\n    \"gender\": \"Female\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{URL}}/api/v1/person/11",
+                    "host": [
+                        "{{URL}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "person",
+                        "11"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DELETE",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "{{URL}}/api/v1/person/12",
+                    "host": [
+                        "{{URL}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "person",
+                        "12"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
